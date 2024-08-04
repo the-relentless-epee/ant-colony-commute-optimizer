@@ -17,7 +17,7 @@ img_y_offset = -0.0510
 
 
 def get_coordinates(city_name):
-    geolocator = geopy.geocoders.GoogleV3("AIzaSyBfojVOxAdn0XgNRvTNQd5FxLdIkiTxlpM")
+    geolocator = geopy.geocoders.GoogleV3('API KEY HERE')
     location = geolocator.geocode(city_name)
     return (location.latitude, location.longitude) if location else None
 
